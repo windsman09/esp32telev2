@@ -4,10 +4,10 @@
 #include <UniversalTelegramBot.h>
 
 /* ================= CONFIG ================= */
-const char* ssid     = "ME";
-const char* password = "12345678";
-const char* botToken = "8074543177:AAGMPpMOpwYPoj60_mbWIa1CWkunL9OKJko";
-const String CHAT_ID = "-4991238648";
+const char* ssid     = "BINUS-IoT";
+const char* password = "Syahdan-10T!";
+const char* botToken = "token";
+const String CHAT_ID = "ID";
 
 /* ================= TELEGRAM ================= */
 WiFiClientSecure client;
@@ -49,7 +49,7 @@ void sendAlert(uint8_t idx) {
   else if (idx == 3) msg = "TOILET RUSAK";
 
   msg += "\n\nLaporan diterima";
-  msg += "\nIndikator #" + String(idx) + " Toilet L1 menyala";
+  msg += "\nIndikator #" + String(idx) + " Toilet L1 Pria menyala";
   msg += "\nKetik /resolve" + String(idx);
 
   Serial.println("SEND TELEGRAM:");
